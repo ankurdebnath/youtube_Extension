@@ -2,7 +2,7 @@
   "manifest_version": 2,
  
   "name": "YouTube Extension",
-  "description": "This extension will Turn Annotation off, Make Player large and you can use spacebar to pause when the video loads",
+  "description": "This extension will Turn Annotation off and you can use spacebar to pause when the video loads. (Works in new YouTube Interface)",
   "version": "1.0",
  
   "browser_action": {

@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	$('input').keydown(function (event) {
+		if(event.keyCode == 32){
+			event.stopPropagation();
+			return true;
+		}
+	});
+	document.addEventListener('keydown', function(event) {
+	    if(event.keyCode == 32) {
+	        $("div#movie_player").tabIndex = 0;
+			$("div#movie_player").focus();
+			window.scrollTo(0, 0);
+	    }
+	});
 	var loc;
 	function focus_player () {
 		$(document).ready(function() {

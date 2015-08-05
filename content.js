@@ -12,10 +12,10 @@ $(document).ready(function() {
 			return true;
 		}
 	});
-	var loc;
+	// var loc;
 	function focus_player () {
 		window.scrollTo(0, 0);
-		loc = window.location.href;
+		// loc = window.location.href;
 		var x = $('button[class="ytp-button ytp-settings-button"]').parent().parent().parent().children('.ytp-panelpopup').children('.ytp-panel').children('.ytp-panel-content').children('.ytp-menu');
 		$('button[class="ytp-button ytp-settings-button"]').click();
 		$('div[class="html5-video-container"]').click();
@@ -32,10 +32,10 @@ $(document).ready(function() {
 	$("div#movie_player").focus();
 	chrome.runtime.onMessage.addListener(function(request, sender, callback) {
    		if(request == "Changed"){
-   			if(window.location.href!=loc){
+   			// if(window.location.href!=loc){
    				setTimeout(focus_player,1000);
-   				loc = window.location.href;
-   			}
+   				// loc = window.location.href;
+   			// }
    		}
 
 	});
